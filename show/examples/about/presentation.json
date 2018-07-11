@@ -1,0 +1,22 @@
+{
+    "title": "About Nerdshow",
+    "author": "Heinrich Göbl",
+    "company": "www.goebl.com",
+    "footer_left": "--no footer--",
+    "footer_right": "hgoebl &#8226; 26.05.2012",
+    "theme": "advanced",
+    "transitions": "yes",
+    "source": [
+        "00-about-nerdshow.md",
+        "10-sample-slides.md",
+        "20-sample-html.html",
+        "99-end.md"
+    ],
+    "sourceEncoding": "utf8",
+    "template": "s5",
+    "nerdshow-folder": "/nerdshow",
+    "socketio-enabled": true,
+    "zoom-enabled": false,
+    "hijs-enabled": true,
+    "destination": "index.html"
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>Node.js 101</title>
+    <meta name="generator" content="github.com/hgoebl/nerdshow"/>
+    <meta name="version" content="S5 1.3"/>
+    <meta name="author" content="Hal DeLage"/>
+    <meta name="company" content="DiscoverOrg"/>
+    <!-- extensions -->
+    <meta name="transitions" content="yes"/>
+    <link rel="stylesheet" href="/nerdshow/s5/ui/advanced/theme.css" type="text/css" title="advanced" media="screen"/>
+    <style>
+        img.scaled-centered {
+            max-width:100%;
+            max-height:100%;
+            display:block;
+            margin:auto;
+        }
+        table.info {
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            margin:auto;
+            width: 80%;
+            text-align: left;
+            border-collapse: collapse;
+            border: 1px solid #69c;
+        }
+        table.info th {
+            padding: 12px 17px 12px 17px;
+            font-weight: normal;
+            color: #039;
+            border-bottom: 1px dashed #69c;
+        }
+        table.info td {
+            padding: 7px 17px 7px 17px;
+            color: #669;
+        }
+        table.info tbody tr:hover td {
+            color: #339;
+            background: #d0dafd;
+        }
+        #loading {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background-image: url('/nerdshow/s5/ui/default/preloaders.gif');
+            background-repeat:no-repeat;
+            background-position: center center;
+        }
+        .presentation {
+            display: none;
+        }
+    </style>
+    <script src="/nerdshow/jquery/jquery-1.11.0.min.js" type="text/javascript"></script>
+    
+</head>
+<body>
+<div id="loading"></div>
+<div class="layout">
+    <div id="header"></div>
+    <!-- div id="footer">
+        <h1>--no footer--</h1>
+
+        <h2>--no footer--</h2>
+    </div -->
+    <div class="topleft"></div>
+    <div class="topright"></div>
+    <div class="bottomleft"></div>
+    <div class="bottomright"></div>
+</div>
+<div class="presentation">
+
+    <h1 id="node-js-101">Node.js 101</h1>
+<center>
+(or How you will learn to love Javascript...)
+<img src="nodelogo.svg" style="width:400px; height:400px;">
+</center>
+
+<h1 id="what-is-node-js">What is Node.js</h1>
+<ul>
+<li><a href="https://nodejs.org/en/">Node.js</a> (node) is an open-source, cross-platform JavaScript run-time environment built on Chrome’s V8 JavaScript engine that executes JavaScript code outside of the Chrome browser.</li>
+<li>Originally developed by Ryan Dahl of Joyent in 2009.</li>
+<li>Libuv is a C library that provides node with asynchronous execution.</li>
+<li><a href="https://www.npmjs.com/">NPM</a>, a package manager and repository for the JavaScript programming language, was released in 2010. </li>
+<li>Node development is supported under the guidlines of the Linux Foundation. </li>
+</ul>
+<h1 id="reasons-to-use-node">Reasons to use node</h1>
+<ul>
+<li>Event driven</li>
+<li>Non blocking I/O</li>
+<li>Single threaded</li>
+<li>ES6+</li>
+<li>Built-in modules</li>
+<li>NPM repository</li>
+<li>Same language across the stack</li>
+</ul>
+<h1 id="reasons-to-not-use-node">Reasons to not use node</h1>
+<ul>
+<li>Multiple threads</li>
+<li>Long running processes</li>
+<li>Static files</li>
+<li>Need to touch hardware</li>
+<li>Language &#39;X&#39; does &#39;Y&#39; better</li>
+<li>NPM repository</li>
+</ul>
+<p><b>NOTE:</b> there are workarounds for most of these...</p>
+<h1 id="who-uses-node">Who uses node</h1>
+<ul>
+<li>Netflix</li>
+<li>LinkedIn</li>
+<li>Microsoft</li>
+<li>IBM</li>
+<li>Walmart</li>
+<li>YOU!!!</li>
+<li>And many, many more...</li>
+</ul>
+<h1 id="built-in-modules">Built-in modules</h1>
+<ul>
+<li>File System (fs)</li>
+<li>HTTP(2/s) (http, http/2, https)</li>
+<li>Stream (stream)</li>
+<li>Console (console)</li>
+<li>Cryptography (crypto)</li>
+<li>Operating System (os)</li>
+<li>And many, many more...</li>
+<li><a href="https://nodejs.org/dist/latest-v10.x/docs/api/">Built-in modules</a></li>
+</ul>
+<h1 id="3rd-party-modules">3rd party modules</h1>
+<ul>
+<li>Express, Helmut, Body Parser</li>
+<li>Axios, Commander, AWS SDK</li>
+<li>Mongoose, mysql, node-postgres, DynamoDB...</li>
+<li>Mocha/Karma/Chai/Istanbul</li>
+<li>Nodemon, pm2</li>
+<li>And many, many more...</li>
+<li><a href="https://www.npmjs.com/">NPM</a></li>
+</ul>
+<h1 id="what-can-i-build-with-node-">What can I build with node?</h1>
+<ul>
+<li>Prototypes</li>
+<li>Command line tools</li>
+<li>Web applications</li>
+<li>APIs</li>
+<li>Test fixtures</li>
+<li>Much, much more</li>
+</ul>
+<h1 id="anatomy-of-a-node-project">Anatomy of a node project</h1>
+<ul>
+<li>Directory structure</li>
+<li>index.js (or whatever)</li>
+<li>Your code</li>
+<li>package.json</li>
+<li>node_modules</li>
+</ul>
+<h1 id="let-s-look-at-some-code">Let&#39;s look at some code</h1>
+<ul>
+<li>REPL (read/eval/print/loop)</li>
+<li>Prototype</li>
+<li>Command line tool</li>
+<li>Web application/API</li>
+<li>Test fixture</li>
+</ul>
+<h1 id="thanks-for-coming">Thanks for coming</h1>
+<h3 id="let-s-do-this-again-sometime-">Let&#39;s do this again sometime...</h3>
+<center>
+<img src="nodelogo.svg" style="width:400px; height:400px;">
+</center>
+
+</div>
+<script src="/nerdshow/hammer/hammer.min.js" type="text/javascript"></script>
+<script src="/nerdshow/s5/ui/common/s5.js" type="text/javascript"></script>
+<script>
+    window.hijs = '.lang-javascript';
+</script>
+<script src="/nerdshow/hijs/hijs.js"></script>
+<script>
+
+    $(function () {
+        $('<link rel="stylesheet" type="text/css" href="/nerdshow/hijs/my-hijs.css"/>').appendTo('head');
+    });
+
+</script>
+<script src="/socket.io/socket.io.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+    $(function () {
+        if (typeof io === 'undefined') {
+            return; // socket.io not loaded
+        }
+        var socket = io.connect();
+        socket.on('jump', function (data) {
+            // console.log('s5-template.html -- jump event received from socket', data);
+            $(document).trigger('jump-sub', data); // ~ s5.jump(data)
+        });
+        $(document).bind('jump-pub', function (e, data) {
+            // console.log('s5-template.html -- jump event received from local', e, data);
+            socket.emit('jump', data);
+        });
+    });
+
+</script>
+</body>
+</html>

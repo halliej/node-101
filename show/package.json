@@ -1,0 +1,43 @@
+{
+    "name": "nerdshow",
+    "version": "0.5.0",
+    "author": "Heinrich Göbl <hgoebl@goebl.com> (http://goebl.com/)",
+    "description": "Presentation software for nerds, with smartphone remote control",
+    "keywords": [
+        "slideshow",
+        "presentation",
+        "markdown",
+        "html",
+        "mobile",
+        "rc"
+    ],
+    "homepage": "https://github.com/hgoebl/nerdshow",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/hgoebl/nerdshow.git"
+    },
+    "dependencies": {
+        "cheerio": "0.12.4",
+        "express": "3.4.8",
+        "marked": "^0.4.0",
+        "mote": "0.2.0",
+        "optimist": "0.6.1",
+        "socket.io": "^2.1.1",
+        "underscore": "1.8.3"
+    },
+    "devDependencies": {
+        "grunt-contrib-clean": "1.1.0",
+        "grunt-contrib-copy": "1.0.0",
+        "grunt-contrib-jshint": "1.1.0",
+        "grunt-run": "^0.8.1"
+    },
+    "engines": {
+        "node": ">= 6.x"
+    },
+    "bin": {
+        "nerdshow": "./bin/nerdshow-run",
+        "nerdshow-generate": "./bin/nerdshow-generate"
+    },
+    "preferGlobal": true
+}

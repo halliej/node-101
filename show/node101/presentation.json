@@ -1,0 +1,16 @@
+{
+    "title": "Node.js 101",
+    "author": "Hal DeLage",
+    "company": "DiscoverOrg",
+    "footer_left": "--no footer--",
+    "footer_right": "--no footer--",
+    "theme": "advanced",
+    "transitions": "yes",
+    "source": [
+        "00-start.md"
+    ],
+    "sourceEncoding": "utf8",
+    "template": "s5",
+    "nerdshow-folder": "/nerdshow",
+    "destination": "index.html"
+}
