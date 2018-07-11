@@ -82,6 +82,8 @@
 * Web application/API
 * Test fixture
 
+[Code is available on github](https://github.com/halliej/node-101)
+
 # Thanks for coming
 ### Let's do this again sometime...
 <center>
