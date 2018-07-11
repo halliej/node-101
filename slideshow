@@ -1,2 +1,2 @@
 #!/bin/bash
- ./nerdshow/bin/nerdshow-run ./nerdshow/node101
+ ./show/bin/nerdshow-run ./show/node101

@@ -1,2 +1,2 @@
 #!/bin/bash
-./nerdshow/bin/nerdshow-generate ./nerdshow/node101/presentation.json
+./show/bin/nerdshow-generate ./show/node101/presentation.json
