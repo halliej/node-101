@@ -491,7 +491,5 @@ function processData(data) {
   return data;
 }
 
-
-// setLevels(data);
 var processedData = processData(chData);
 console.log(JSON.stringify(processedData))

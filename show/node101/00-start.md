@@ -8,6 +8,7 @@
 # What is Node.js
  * [Node.js](https://nodejs.org/en/) (node) is an open-source, cross-platform JavaScript run-time environment built on Chrome’s V8 JavaScript engine that executes JavaScript code outside of the Chrome browser.
  * Originally developed by Ryan Dahl of Joyent in 2009.
+ * Additional native and javascript code provides non-browser functionality.
  * Libuv is a C library that provides node with asynchronous execution.
  * [NPM](https://www.npmjs.com/), a package manager and repository for the JavaScript programming language, was released in 2010. 
  * Node development is supported under the guidlines of the Linux Foundation. 
@@ -20,10 +21,11 @@
 * Built-in modules
 * NPM repository
 * Same language across the stack
+* Open Source
 
 # Reasons to not use node
 * Multiple threads
-* Long running processes
+* Long running computations
 * Static files
 * Need to touch hardware
 * Language 'X' does 'Y' better
@@ -38,7 +40,6 @@
 * IBM
 * Walmart
 * YOU!!!
-* And many, many more...
 
 # Built-in modules
 * File System (fs)
@@ -54,7 +55,7 @@
 * Express, Helmut, Body Parser
 * Axios, Commander, AWS SDK
 * Mongoose, mysql, node-postgres, DynamoDB...
-* Mocha/Karma/Chai/Istanbul
+* Mocha/Karma/Chai/Istanbul/Jest
 * Nodemon, pm2
 * And many, many more...
 * [NPM](https://www.npmjs.com/)
