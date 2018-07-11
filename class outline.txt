@@ -1,0 +1,39 @@
+Intro
+
+What we will/will not cover
+
+What is Node
+
+Why use node, why not
+
+Event driven
+Non blocking I/O
+ES6
+Single thread
+Built-in modules
+NPM
+
+Single threaded
+Static files
+Need to touch hardware
+
+Anatomy of a node project
+
+
+Hands On
+
+Prototyping
+Command line tool
+App server
+Test fixture
+
+
+./bin/nerdshow-generate ./node101/presentation.json
+./bin/nerdshow-run ./node101
+
+
+
+
+
+
+

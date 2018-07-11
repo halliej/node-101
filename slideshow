@@ -1,0 +1,2 @@
+#!/bin/bash
+ ./nerdshow/bin/nerdshow-run ./nerdshow/node101

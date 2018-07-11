@@ -1,0 +1,107 @@
+
+
+
+
+From Wikipedia: Node.js is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code server-side. 
+
+Node.js® is a JavaScript runtime built on Chrome’s V8 JavaScript engine.
+
+Node.js was originally written by Ryan Dahl in 2009 - Joyent
+
+Dahl criticized the limited possibilities of the most popular web server in 2009, Apache HTTP Server, to handle a lot of concurrent connections (up to 10,000 and more) and the most common way of creating code (sequential programming), when code either blocked the entire process or implied multiple execution stacks in the case of simultaneous connections
+
+In January 2010, a package manager was introduced for the Node.js environment called npm.[32] The package manager makes it easier for programmers to publish and share source code of Node.js libraries and is designed to simplify installation, updating, and uninstallation of libraries.
+
+
+Node.js brings event-driven programming to web servers, enabling development of fast web servers in JavaScript.[31] Developers can create highly scalable servers without using threading, by using a simplified model of event-driven programming that uses callbacks to signal the completion of a task.[31] Node.js connects the ease of a scripting language (JavaScript) with the power of Unix network programming.[31]
+
+Node.js was built on the Google V8 JavaScript engine since it was open-sourced under the BSD license. It is extremely fast and proficient with internet fundamentals such as HTTP, DNS, TCP.[28] Also, JavaScript was a well-known language, making Node.js immediately accessible to the entire web development community
+
+
+No window, global instead (where it makes sense). Also no document, process
+
+
+Node.js uses asynchronous programming!
+
+A common task for a web server can be to open a file on the server and return the content to the client.
+
+Here is how PHP or ASP handles a file request:
+
+    Sends the task to the computer's file system.
+    Waits while the file system opens and reads the file.
+    Returns the content to the client.
+    Ready to handle the next request.
+
+Here is how Node.js handles a file request:
+
+    Sends the task to the computer's file system.
+    Ready to handle the next request.
+    When the file system has opened and read the file, the server returns the content to the client.
+
+Node.js eliminates the waiting, and simply continues with the next request.
+
+Node.js runs single-threaded, non-blocking, asynchronously programming, which is very memory efficient.
+
+
+
+
+https://nodejs.org/en/
+
+https://en.wikipedia.org/wiki/Node.js
+
+https://www.w3schools.com/nodejs/nodejs_intro.asp
+
+https://medium.freecodecamp.org/what-exactly-is-node-js-ae36e97449f5
+
+
+
+    Assertion Testing
+    Async Hooks
+    Buffer
+    C++ Addons
+    C/C++ Addons - N-API
+    Child Processes
+    Cluster
+    Command Line Options
+    Console
+    Crypto
+    Debugger
+    Deprecated APIs
+    DNS
+    Domain
+    ECMAScript Modules
+    Errors
+    Events
+    File System
+    Globals
+    HTTP
+    HTTP/2
+    HTTPS
+    Inspector
+    Internationalization
+    Modules
+    Net
+    OS
+    Path
+    Performance Hooks
+    Process
+    Punycode
+    Query Strings
+    Readline
+    REPL
+    Stream
+    String Decoder
+    Timers
+    TLS/SSL
+    Tracing
+    TTY
+    UDP/Datagram
+    URL
+    Utilities
+    V8
+    VM
+    ZLIB
+
+
+
+There is very little future in being right when your boss is wrong.

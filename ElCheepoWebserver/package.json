@@ -1,0 +1,11 @@
+{
+  "name": "elcheepo-web-server",
+  "version": "0.0.1",
+  "private": true,
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "serve-index": "^1.6.3"
+  }
+}

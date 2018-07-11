@@ -1,0 +1,28 @@
+{
+  "name": "hellodo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "test": "nyc --reporter=html --reporter=text mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "helmet": "^3.10.0",
+    "method-override": "^2.3.10",
+    "winston": "^2.4.0",
+    "winston-daily-rotate-file": "^1.7.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.14.1",
+    "eslint-config-rallycoding": "^3.2.0",
+    "expect": "^22.0.3",
+    "mocha": "^3.1.0",
+    "nyc": "^11.4.1",
+    "supertest": "^3.0.0"
+  }
+}
