@@ -65,6 +65,7 @@
 * Web applications
 * APIs
 * Test fixtures
+* Desktop applications
 * Much, much more
 
 # Anatomy of a node project
