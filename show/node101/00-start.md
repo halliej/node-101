@@ -9,7 +9,6 @@
  * [Node.js](https://nodejs.org/en/) (node) is an open-source, cross-platform JavaScript run-time environment built on Chrome’s V8 JavaScript engine that executes JavaScript code outside of the Chrome browser.
  * Originally developed by Ryan Dahl of Joyent in 2009.
  * Additional native and javascript code provides non-browser functionality.
- * Libuv is a C library that provides node with asynchronous execution.
  * [NPM](https://www.npmjs.com/), a package manager and repository for the JavaScript programming language, was released in 2010. 
  * Node development is supported under the guidlines of the Linux Foundation. 
  
